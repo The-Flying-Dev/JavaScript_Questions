@@ -127,6 +127,7 @@ One final tip: if you ever need to know what all of the Symbols in your Ruby pro
 #Knowledge Check#
 
 1. Are Symbols garbage collected?
+# yes 
 
 #Assignment#
 sites.rb
@@ -145,3 +146,5 @@ urls = [
 # Your code goes here
 
 ```
+
+
