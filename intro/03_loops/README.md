@@ -150,6 +150,7 @@ Finally, although Ruby also offers the ```redo``` and ```retry``` keywords when 
 # Knowledge Check
 
 1. Are variables declared in a for-loop available after a loop has ended?
+# no
 
 # Assignment
 fibonacci.rb

@@ -7,3 +7,5 @@ lyrics = "Is this the real life?"\
 
 # Your code goes here
 
+p lyrics.split(//).uniq
+

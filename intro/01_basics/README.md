@@ -80,6 +80,7 @@ GRAVITATIONAL_CONST = 28  # This will cause a warning
 # Knowledge Check
 
 1. Who is the principal designer of the Ruby language?
+# Yukihiro Matsumoto
 
 # Assignment
 family.rb

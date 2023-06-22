@@ -202,6 +202,7 @@ end
 
 #Knowledge Check#
 1. What is the return value of an Array element outside the bounds of the Array?
+# nil
 
 #Assignment#
 queen.rb

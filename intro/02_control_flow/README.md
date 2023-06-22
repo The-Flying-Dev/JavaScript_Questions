@@ -106,6 +106,7 @@ What you can take away from this is that Ruby offers you quite a bit of flexibil
 
 # Knowledge Check
 1. What is the result of ```"c" < "C"```? What about ```"1" > "A"```?
+# false
 
 # Assignment
 names.rb
