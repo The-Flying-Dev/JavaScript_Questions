@@ -85,6 +85,7 @@ The first, ```block_required```, shows the absolute minimum needed to execute a 
 
 #Knowledge Check#
 1. What's the difference between calling ```songs.sort``` and ```songs.sort!```?
+# sort returns a modified array while leaving the original array alone, sort! modifies the original array
 
 #Assignment#
 game_rankings.rb

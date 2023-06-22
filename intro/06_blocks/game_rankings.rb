@@ -15,3 +15,9 @@ game_rankings = {
 
 # Your code goes here
 
+avg_score = game_rankings.inject(0) { |sum, tuple| sum += tuple[1] } / game_rankings.size
+above_avg = game_rankings.select { |k, v| v > avg_score }
+
+
+p avg_score # sum of hash values divided by the size of the hash
+p above_avg # all key-value pairs with higher values than the average
