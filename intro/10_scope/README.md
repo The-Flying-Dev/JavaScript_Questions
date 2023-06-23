@@ -62,6 +62,7 @@ puts "#{$ERROR1} #{$ERROR2} #{$ERROR3}" # Accessible anywhere!
 #Knowledge Check#
 
 1. What is the scope of variables declared in for-loops?
+# The last element is available outside loop
 
 #Assignment#
 basic_game.rb
