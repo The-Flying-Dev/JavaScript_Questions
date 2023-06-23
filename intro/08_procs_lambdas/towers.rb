@@ -16,3 +16,18 @@ conversion = lambda do |x|
 end
 
 # Your code goes here
+
+
+sorted_array = towers.sort { |a, b| b[:height] <=> a[:height] }
+
+conversion = lambda do |x|
+  # Your code goes here
+  for item in x 
+    converted_height = sprintf('%.1f', item[:height] / factor)
+    puts "%-25s => %s" % [item[:name], converted_height]
+  end
+end
+
+conversion.call(sorted_array)
+
+
