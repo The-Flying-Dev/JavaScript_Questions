@@ -9,6 +9,9 @@ end
 class NetflixAccount
   # Your code goes here
 
+  attr_reader :username, :recently_watched
+  attr_accessor :my_list
+
   def initialize(username)
     @username = username
     @my_list = []
@@ -17,14 +20,17 @@ class NetflixAccount
 
   def add_to_my_list(movie)
     # Your code goes here
+    @my_list.push(movie) if movie.is_a?(Movie) # defensive programming   
   end
 
   def remove_from_my_list(movie)
     # Your code goes here
+    @my_list.delete(movie) if movie.instance_of?(Movie)    
   end
 
   def watch(movie)
     # Your code goes here
+    recently_watched.push(movie) if movie.kind_of?(Movie)
   end
 end
 
@@ -35,7 +41,7 @@ movies = [
 ]
 
 account = NetflixAccount.new("user123")
-account.watch(movies[0])
-account.add_to_my_list(movies[1])
-account.add_to_my_list(movies[2])
-account.remove_from_my_list(movies[2])
+p account.watch(movies[0])
+p account.add_to_my_list(movies[1])
+p account.add_to_my_list(movies[2])
+p account.remove_from_my_list(movies[2])
