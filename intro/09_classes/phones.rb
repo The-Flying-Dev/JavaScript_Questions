@@ -35,6 +35,7 @@ new_phones = []
 
 # Your code goes here
 
+# iterate through phones array of hashes and push into the new_phones array in order to create new Phone instances
 phones.each do |phone|
   new_phones.push(Phone.new(phone[:brand], phone[:model], phone[:operating_system], phone[:release_date]))
 end
