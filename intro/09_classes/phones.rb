@@ -2,6 +2,12 @@ require "date"
 
 class Phone
   # Your code goes here
+  def initialize(brand, model, operating_system, release_date)
+    @brand = brand
+    @model = model
+    @operating_system = operating_system
+    @release_date = release_date
+  end
 end
 
 phones = [
@@ -28,3 +34,11 @@ phones = [
 new_phones = []
 
 # Your code goes here
+
+phones.each do |phone|
+  new_phones.push(Phone.new(phone[:brand], phone[:model], phone[:operating_system], phone[:release_date]))
+end
+
+p new_phones
+
+
