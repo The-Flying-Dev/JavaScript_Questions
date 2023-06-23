@@ -88,7 +88,7 @@ def full_lambda
   puts "End of full_lambda"
 end
 
-early_return    # Nothing printed
+early_proc    # Nothing printed
 full_lambda     # "Called Lambda!" and "End of full_lambda" are both printed
 ```
 
@@ -118,6 +118,7 @@ chant(&triple)
 #Knowledge Check#
 
 1. What does the Hash method ```delete_if``` do?
+# deletes all key-value pairs for which block evalutes to be true
 
 #Assignment#
 towers.rb
@@ -134,7 +135,7 @@ towers = [
   { :name => "Stratosphere Tower", :height => 350.2 }
 ]
 
-factor = 100/2.54   # Converts centimeters to inches
+factor = 100/2.54   # Converts centimeters to inches, to multiply all the heights
 
 conversion = lambda do |x|
   # Your code goes here
@@ -142,3 +143,5 @@ end
 
 # Your code goes here
 ```
+
+

@@ -13,10 +13,14 @@ urls = [
 
 urls = urls.map(&:to_sym)
 
+# must return object after assignment
 url_hash = urls.inject({}) { |k, v| k[v] = v.to_s; k}
-
-p url_hash
-
 url_hash = url_hash.transform_values { |value| open(value).size }
 
+
 p url_hash
+p url_hash
+
+
+# url_map = Hash.new
+# urls.each { |url| url_map[url.to_sym] = open(url) }

@@ -3,10 +3,23 @@
 # Your code goes here
 
 
-num1 = 0
-num2 = 1
+# multiple assignment
+num1, num2 = 0, 1
+
 10.times do 
-  p num1 
   num1, num2 = num2, num1 + num2
+  p num1 
 end
 
+
+=begin
+
+# multiple assignment
+a, b = 0, 1
+
+for i in 1..10
+    a, b = b, a+b
+    puts a
+end
+
+=end

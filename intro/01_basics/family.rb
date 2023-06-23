@@ -8,7 +8,7 @@ mary = 16
 
 age_sum = mom + dad + john + mary
 
-result = mom * dad / (john - mary)
+result = mom * dad / (john - mary).abs
 
 p "Sum of ages #{age_sum}"
 p "Result #{result}"

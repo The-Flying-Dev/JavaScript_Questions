@@ -7,6 +7,8 @@ towers = [
   { :name => "Stratosphere Tower", :height => 350.2 } 
 ]
 
+sorted_array = towers.sort { |a, b| b[:height] <=> a[:height] }
+
 factor = 100/2.54   # Converts centimeters to inches
 
 conversion = lambda do |x|
