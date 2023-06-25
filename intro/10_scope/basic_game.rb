@@ -8,7 +8,8 @@ end
 
 class Game
   # Your code goes here
-  @@MAX_PLAYER_COUNT = 0
+  #@@MAX_PLAYER_COUNT = 0
+  @@MAX_PLAYER_COUNT = 10
 
   attr_accessor :players
   
@@ -25,6 +26,12 @@ class Game
 
 
   def add_player(player)
+
+    if @players.length > @@MAX_PLAYER_COUNT
+      puts '[Error] Not enough room for new player.'
+      return
+    end
+
     case player
     when Player
       self.players.push(player)

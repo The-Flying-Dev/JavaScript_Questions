@@ -11,13 +11,21 @@ lyrics = "Is this the real life?"\
 
 marks = Hash.new(0)
 
-(0...lyrics.length ).each { |i|
-    c = lyrics[i]
-    
-    next if c == ' '
 
-    marks[c] += 1  # add each character to the marks hash with it's value as the number of time it appears in the string
-}
+lyrics.split("").each do |i|
+    c = lyrics[i]    
+    next if c == ' '
+    # add each character to the marks hash with it's key as the Character and value as the number of time it appears in the string
+    marks[c] += 1  
+end                
+
+
+# (0...lyrics.length ).each { |i|
+#     c = lyrics[i]    
+#     next if c == ' '
+#     marks[c] += 1  
+# }
+
 
 for k, v in marks
     puts "character:#{k} - count:#{v}"
