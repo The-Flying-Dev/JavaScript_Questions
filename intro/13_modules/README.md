@@ -200,6 +200,7 @@ After taking all this in, you might be wondering to yourself, "Modules seem pret
 #Knowledge Check#
 
 1. Can you declare private methods in a Module? 
+# yes
 
 #Assignment#
 1. mixins.rb

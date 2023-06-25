@@ -107,6 +107,7 @@ As an aside, in other languages, these kinds of methods are usually called **get
 #Knowledge Check#
 
 1. What are the benefits of using a setter method over directly making changes to an instance variable?
+# Protects you from unanticipated changes to your code
 
 #Assignment#
 netflix.rb

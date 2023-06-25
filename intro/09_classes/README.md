@@ -102,6 +102,7 @@ Make sure you understand the difference between a class and an instance. In case
 #Knowledge Check#
 
 1. What does the method ```respond_to?``` do?
+#  A Ruby/Rails method for detecting whether a class has a particular method on it.
 
 #Assignment#
 phones.rb

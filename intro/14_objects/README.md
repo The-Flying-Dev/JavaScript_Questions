@@ -75,6 +75,7 @@ Remember, Procs and Lambdas are in fact Objects.
 #Knowledge Check#
 
 1. What are the advantages of using ```responds_to?``` over ```is_a?```? 
+# Better for handling custom objects
 
 #Assignment#
 1. rpg.rb

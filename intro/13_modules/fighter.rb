@@ -14,6 +14,23 @@ end
 
 class Fighter
   # Your code goes here
+  include WingChunMixin
+  #include BoxingMixin
+  include FencingMixin
+  include JeetKuneDoMixin
+
+  include Logging
+
+  attr_accessor :name 
+
+  def initialize(name)
+    @name = name
+  end
+
+  def uppercut
+    BoxingMixin::uppercut
+    self.logger.info('Yaha!')
+  end
 end
 
 fighter = Fighter.new("Bruce Lee")
