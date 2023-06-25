@@ -208,6 +208,8 @@ If you opt for the latter, you are making a judgment that an error must be corre
 #Knowledge Check#
 
 1. What is the parent class of NoMethodError?
+# NameError class
+
 
 #Assignment#
 1. auth.rb
